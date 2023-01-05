@@ -1,10 +1,12 @@
 import React from "react";
 
 const Pet = (props) => {
-  return React.createElement("div", {}, [
-    React.createElement("div", {}, props.id),
-    React.createElement("div", {}, props.name),
-    React.createElement("div", {}, props.idk),
-  ]);
+    return (
+      <div>
+        <h1>{props.name}</h1>
+        <h2>{props.animal}</h2>
+        <h2>{props.breed}</h2>
+      </div>
+    );
 };
 export default Pet;

@@ -1,19 +1,26 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import Pet from "./Pets";
-
-var props = { name: "name", id: "id", idk: "idk" };
+// eslint-disable-next-line import/no-unresolved
+import "./style.css"
 /*
 const response = await fetch("", {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    method: 'get', // *get, post, put, delete, etc.
     headers: {
-        'Content-Type': 'application/json',
+        'content-type': 'application/json',
         'key':"ikdjf",
     }
 })
 
  */
 const App = () => {
-  return React.createElement("div", {}, [React.createElement(Pet, { props })]);
+    return (
+      <div className="app">
+        <h1> life is good ha</h1>
+        <Pet name={"dora"} breed={"havanise"} animal={"dog"}/>
+      </div>
+    );
 };
 
 export default App;
