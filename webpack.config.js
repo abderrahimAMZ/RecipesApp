@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
+
     entry: './index.js',
     mode: 'development',
     output: {
@@ -32,7 +33,17 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
+            {
+                test: /\.(png|jpg)$/,
+                exclude:/node_modules/,
+                use: [
+                    {
+                        loader : "url-loader?limit=8192",
 
+                    }
+
+                ]
+            }
         ],
     },
     plugins: [
@@ -42,5 +53,8 @@ module.exports = {
     ],
     experiments: {
         topLevelAwait: true
+    },
+    stats:{
+        errorDetails:true,
     }
 };

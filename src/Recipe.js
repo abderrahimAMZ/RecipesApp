@@ -5,9 +5,7 @@ const Recipe = ({image,  title, source})=> {
 
   return (
     <div>
-      <div>
         <img src={image} alt={title}  />
-      </div>
         <p>title: {title}</p>
         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
         <a href={source}> source url for the meal</a>
