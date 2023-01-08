@@ -1,6 +1,26 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background: white;
     background-image: radial-gradient(black 1px, transparent 0);
     background-size: 40px 40px;
     background-position: -19px -19px;
+}
+img {
+    width: 70%;
+    height: 70%
+}
+.Recipe_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Recipe {
+    border: 5px solid darkblue;
+    background-color: white;
+    height: 30%;
+    width : 30%;
+}
+ul {
+    list-style-type: none;
 }

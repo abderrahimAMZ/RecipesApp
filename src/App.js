@@ -14,7 +14,7 @@ const App = () => {
     return (
       <div className="app">
         <h1> life is good ha</h1>
-          <ul>
+          <ul className={"Recipe_list"} >
               {results.map((item)=> {
                   console.log(item);
                   return(
