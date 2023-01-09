@@ -3,8 +3,9 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import Recipe from "./Recipe"
 // eslint-disable-next-line import/no-unresolved
+import ComplexSearch from "./ComplexSearch"
 import "./style.css"
-
+import NavBar from "./NavBar";
 const res = await fetch('https://api.spoonacular.com/recipes/search?apiKey=8b36495f0cdc4b85a307f2fe0ff570f8&query=chicken');
 const json = await res.json();
 var results = json.results;
@@ -13,19 +14,21 @@ const App = () => {
     console.log(results)
     return (
       <div className="app">
-        <h1> life is good ha</h1>
-          <ul className={"Recipe_list"} >
+        <NavBar />
+        <div className={"navs_Recipe_list"}>
+          <div className={"navs"}>
+          </div>
+        <div className={"Recipe_list"}>
               {results.map((item)=> {
                   console.log(item);
                   return(
-                    <li id={item.id} key={item.id}>
-                        <Recipe title={item.title} image={item.image} source={item.sourceUrl} />
-                    </li>
+                        <Recipe id={item.id} key={item.id} title={item.title} image={item.image} source={item.sourceUrl} />
                   )
               })}
-          </ul>
+        </div>
       </div>
-    );
+    </div>
+)
 };
 
 export default App;

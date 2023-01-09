@@ -7,20 +7,50 @@ body {
     background-size: 40px 40px;
     background-position: -19px -19px;
 }
+.navs_Recipe_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 img {
+
     width: 70%;
-    height: 70%
+    height:70%;
+    margin: 2%;
 }
 .Recipe_list {
+    text-align: center;
+    width: 70%;
+    height: 80%;
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
 }
 .Recipe {
     border: 5px solid darkblue;
     background-color: white;
-    height: 30%;
-    width : 30%;
+    height: 25rem;
+    width : 45%;
+    margin: 1%;
 }
 ul {
     list-style-type: none;
+}
+
+.navbar {
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+
+
+}
+nav {
+    background-color: bisque;
 }
