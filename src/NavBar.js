@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar = ()=> {
+const NavBar = () => {
   return (
     <nav>
       <ul className={"navbar"}>
@@ -11,6 +11,6 @@ const NavBar = ()=> {
         <li>Login</li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 export default NavBar;
