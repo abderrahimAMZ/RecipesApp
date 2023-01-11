@@ -5,10 +5,12 @@ const Recipe = ({ image, title, source }) => {
 
   return (
     <div className={"Recipe"}>
-      <img src={image} alt={title} />
-      <p>title: {title}</p>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a href={source}> source url for the meal</a>
+      <div className={"image"}>
+        <img src={image} alt={title} />
+      </div>
+      <div className={"title"}>
+        {title}
+      </div>
     </div>
   );
 };

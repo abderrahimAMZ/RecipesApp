@@ -18,7 +18,6 @@ const ComplexSearch = () => {
     "Irish",
     "Italian",
     "Japanese",
-    "Jewish",
     "Korean",
     "Latin American",
     "Mediterranean",
@@ -47,15 +46,15 @@ const ComplexSearch = () => {
   return (
     <div className={"navs_Recipe_list"}>
 
-    <div className={"navs"}>
 
-      <form
+      <form className={"form"}
         onSubmit={ (e) => {
           e.preventDefault();
             requestRecipes();
           }
         }
-      >
+      ><div>
+
         <label htmlFor="location">
           Meal
           <input
@@ -67,6 +66,9 @@ const ComplexSearch = () => {
             placeholder="your meal name here"
           />
         </label>
+      </div>
+        <div>
+
         <label htmlFor="Cuisine">
          Choose Cuisine
           <select
@@ -89,6 +91,8 @@ const ComplexSearch = () => {
             })}
           </select>
         </label>
+        </div>
+        <div>
 
         <label htmlFor="Ingrediants">
          Ingrediants
@@ -101,9 +105,12 @@ const ComplexSearch = () => {
             placeholder="place ingrediants seperated with coma ','"
           />
         </label>
+        </div>
+        <div>
+
         <button>Submit</button>
+        </div>
       </form>
-    </div>
 
       <div className={"recipe_list"}>
         {Recipes.map((item) => {

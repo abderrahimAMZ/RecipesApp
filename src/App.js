@@ -9,6 +9,7 @@ import NavBar from "./NavBar";
 const App = () => {
   return (
     <div className="app">
+      <NavBar />
       <ComplexSearch />
     </div>
   );

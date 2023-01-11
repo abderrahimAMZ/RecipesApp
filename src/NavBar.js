@@ -2,15 +2,13 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav>
-      <ul className={"navbar"}>
-        <li>MealIdea</li>
-        <li>Recipes</li>
-        <li>Ingreadiants</li>
-        <li>icon</li>
-        <li>Login</li>
-      </ul>
-    </nav>
+    <header className={"navbar"}>
+        <div>MealIdea</div>
+        <div>Recipes</div>
+        <div>Ingreadiants</div>
+        <div>icon</div>
+        <div>Login</div>
+    </header>
   );
 };
 export default NavBar;
