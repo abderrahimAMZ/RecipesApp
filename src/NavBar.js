@@ -7,7 +7,6 @@ const NavBar = () => {
         <div>Recipes</div>
         <div>Ingreadiants</div>
         <div>icon</div>
-        <div>Login</div>
     </header>
   );
 };
