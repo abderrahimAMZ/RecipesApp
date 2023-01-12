@@ -8,9 +8,7 @@ const Recipe = ({ image, title, source }) => {
       <div className={"image"}>
         <img src={image} alt={title} />
       </div>
-      <div className={"title"}>
-        {title}
-      </div>
+      <div className={"title"}>{title}</div>
     </div>
   );
 };
