@@ -5,9 +5,7 @@ const Recipe = ({ image, title, source }) => {
 
   return (
     <div className={"Recipe"}>
-      <div className={"image"}>
         <img src={image} alt={title} />
-      </div>
       <div className={"title"}>{title}</div>
     </div>
   );

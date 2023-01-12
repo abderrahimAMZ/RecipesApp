@@ -23,7 +23,7 @@
     margin-top : 8%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 .form {
@@ -42,32 +42,37 @@
     display: flex;
     flex-wrap :  wrap;
     justify-content: space-between;
-    width: 60rem;
+    width: 55rem;
     height: 100%;
 }
 
 .Recipe {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     border-radius: 8px;
-    margin: 2.5rem;
+    margin: 1rem;
     display : flex;
     flex-direction: column;
-    width: 25rem;
+    width: 24rem;
     height: 25rem;
     box-shadow: 10px 5px 5px #EDF4F4;
-
+    background-color: #D0F5DB;
+    background-color: #CFF2DB;
 }
 .Recipe div {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
     margin: auto;
+    width: 100%;
+
 }
 
-.image img {
-    border-radius: 8px;
-    border-bottom-left-radius:0px ;
-    border-bottom-right-radius:0px ;
-    width: 25rem;
+img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    top: 0;
+    width: 100%;
     height: 18rem;
 }
 .form {
@@ -203,4 +208,7 @@ textarea.form__input {
 }
 .button svg {
     margin-right : 2rem;
+}
+.image  {
+    margin: 0 0 0 0;
 }
