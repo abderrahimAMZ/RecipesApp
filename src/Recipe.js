@@ -1,6 +1,5 @@
 import React from "react";
-
-const Recipe = ({ image, title, source }) => {
+const Recipe = ({ image, title, source , id}) => {
   console.log(image, source, title);
 
   return (

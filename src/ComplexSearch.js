@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Recipe from "./Recipe";
+
 const ComplexSearch = () => {
   const cuisines = [
     "African",
@@ -234,7 +235,13 @@ const ComplexSearch = () => {
       </form>
 
       <div className={"recipe_list"}>
-        {Recipes.map((item) => {
+        { !Recipes.length ? (
+          <div className={"nothing_found"}>
+              <img alt={"a man preparing food"} src={require("./Intropic.png").default} />
+            <h1> Nothing found ...</h1>
+            </div>
+        ) : (
+          Recipes.map((item) => {
           console.log(item);
           return (
             <Recipe
@@ -245,7 +252,7 @@ const ComplexSearch = () => {
               source={item.sourceUrl}
             />
           );
-        })}
+        }))}
       </div>
     </div>
   );
